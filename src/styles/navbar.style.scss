@@ -1,0 +1,47 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin-inline: auto;
+  padding-block: 17.5px;
+}
+
+.navbar h1 {
+  font-family: Inter;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+}
+
+.navbar ul li a {
+  color: $primary-text-color;
+  text-decoration: none;
+  font-weight: 500;
+  font-family: "Onest", sans-serif;
+}
+
+.navbar section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5em;
+}
+
+.navbar button {
+  border-radius: 32px;
+  border: none;
+  background: rgb(40, 114, 121);
+  color: white;
+  padding: 12px 24px 12px 24px;
+  font-family: Onest;
+  font-size: 14px;
+  font-weight: 600;
+}

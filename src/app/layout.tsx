@@ -1,16 +1,12 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
-import "./globals.css";
+import { Inter } from "@next/font/google";
+import "../styles/app.scss";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
+// Configure the Inter font
+const inter = Inter({
+  subsets: ["latin"], // Use Latin subset
+  variable: "--font-inter", // Optional: CSS variable for global use
+  weight: ["400", "700"], // Specify font weights needed
 });
 
 export const metadata: Metadata = {
@@ -20,14 +16,13 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        {children}
-      </body>
+      {/* Apply the Inter font using its className */}
+      <body className={inter.className}>{children}</body>
     </html>
   );
 }

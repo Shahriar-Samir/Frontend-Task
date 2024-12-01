@@ -2,7 +2,7 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <nav className="">
+    <nav className="navbar">
       <h1>Logo</h1>
       <ul>
         <li>
@@ -21,7 +21,7 @@ const Navbar = () => {
           <a href="#">Contact</a>
         </li>
       </ul>
-      <section>
+      <section >
         <img src="/icons/bag.svg" />
         <button>Login</button>
       </section>
