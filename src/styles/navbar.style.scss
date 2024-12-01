@@ -1,6 +1,7 @@
 .navbar {
   display: flex;
   justify-content: space-between;
+  max-width: 1200px;
   align-items: center;
   width: 80%;
   margin-inline: auto;
@@ -41,7 +42,7 @@
   background: rgb(40, 114, 121);
   color: white;
   padding: 12px 24px 12px 24px;
-  font-family: Onest;
+  font-family: "Onest";
   font-size: 14px;
   font-weight: 600;
 }
