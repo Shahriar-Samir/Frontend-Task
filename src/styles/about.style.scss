@@ -107,3 +107,22 @@
   object-fit: cover;
   border-radius: 17px;
 }
+
+@media (min-width: 0px) {
+  .about {
+    flex-direction: column;
+  }
+
+  .about .about-left {
+    width: 100%;
+  }
+  .about-right {
+    position: relative;
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .about {
+    flex-direction: row;
+  }
+}
