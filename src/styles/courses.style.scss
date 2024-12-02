@@ -1,7 +1,13 @@
+.courses-container {
+  overflow: hidden;
+  width: 100%;
+  max-width: 1600px;
+  margin-inline: auto;
+}
 .courses-section {
   width: 80%;
-  margin: auto;
   margin-top: 120px;
+  margin-inline: auto;
   max-width: 1200px;
 }
 .courses-section .courses-titles h1 {
@@ -66,8 +72,19 @@
   font-weight: 400;
 }
 
+.cards-container {
+  width: 100%;
+  position: relative;
+}
 .cards {
   margin-top: 60px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+  transition: 0.3s ease-in;
+  gap: 20px;
+  width: fit-content;
 }
 
 .card {

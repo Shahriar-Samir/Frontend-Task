@@ -21,7 +21,7 @@ const Navbar = () => {
           <a href="#">Contact</a>
         </li>
       </ul>
-      <section >
+      <section>
         <img src="/icons/bag.svg" />
         <button>Login</button>
       </section>

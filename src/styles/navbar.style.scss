@@ -46,3 +46,22 @@
   font-size: 14px;
   font-weight: 600;
 }
+
+// mobile view
+@media (max-width: 1024px) {
+  .navbar {
+    flex-direction: column;
+    gap: 2em;
+  }
+
+  .navbar h1 {
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 600;
+  }
+
+  .navbar ul {
+    flex-wrap: wrap;
+    gap: 2em;
+  }
+}
