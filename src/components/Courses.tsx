@@ -1,62 +1,79 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import Card from "./Card";
+import { TCard } from "../../types/card";
 
 const Courses = () => {
   const [cardState, setCardState] = useState<number>(0);
+  const [cardSize, setCardSize] = useState<number>(0);
+  const [cardQuantity, setCardQuantity] = useState<number>(0);
+
+  useEffect(() => {
+    if (window.innerWidth > 768) {
+      setCardQuantity(2);
+      setCardSize(420);
+    } else {
+      setCardQuantity(3);
+      setCardSize(320);
+    }
+  }, []);
+
   const leftClick = () => {
     if (cardState === 0) {
       return;
     }
-    return setCardState((oldState: number) => oldState + 420);
+    return setCardState((oldState: number) => oldState + cardSize);
   };
-  console.log(cardState);
   const rightClick = () => {
-    if (cardState <= -420 * 2) {
+    if (cardState <= -cardSize * cardQuantity) {
       return;
     }
-    return setCardState((oldState: number) => oldState - 420);
+    return setCardState((oldState: number) => oldState - cardSize);
   };
 
-  const card = (
-    <article className="card">
-      <img src="/pictures/card1.png" />
-      <section className="card-details">
-        <div className="course-status">
-          <p className="beginner">Beginner</p>
-          <p className="nutrition">Nutrition and Diet</p>
-        </div>
-        <h1>Foundation of Sleep: Sleep Science and Sleep Disorders</h1>
-        <div className="review-status">
-          <div className="stars">
-            <img src="/icons/star.png" className="star" />
-            <img src="/icons/star.png" className="star" />
-            <img src="/icons/star.png" className="star" />
-            <img src="/icons/star.png" className="star" />
-            <img src="/icons/half-star.png" className="star" />
-          </div>
-          <p>4.9 (566)</p>
-        </div>
-        <div className="deadline-lesson">
-          <div className="deadline">
-            <img src="/icons/timer.png" />
-            <p>6h 34m</p>
-          </div>
-          <div className="lessons">
-            <img src="/icons/book.png" />
-            <p>3 Lessons</p>
-          </div>
-        </div>
-        <div className="trainer-price">
-          <div className="trainer">
-            <img src="/pictures/profile1.png" />
-            <h1>Kilian Murphe</h1>
-          </div>
-          <h2>$40</h2>
-        </div>
-      </section>
-    </article>
-  );
+  const cards: TCard[] = [
+    {
+      level: "Beginner",
+      nutrition: "Nutrition and Diet",
+      title: "Foundation of Sleep: Sleep Science and Sleep Disorders",
+      rating: 566,
+      price: "$40",
+      trainer: "Kilian Murphe",
+      trainerPic: "/pictures/profile1.png",
+      image: "/pictures/card1.png",
+    },
+    {
+      level: "Intermediate",
+      nutrition: "Health and Wellness",
+      title: "Parenting in the Digital Age: Navigating Screen Time",
+      rating: 456,
+      price: "$50",
+      trainer: "Sarah Hopkins",
+      trainerPic: "/pictures/profile2.png",
+      image: "/pictures/card2.png",
+    },
+    {
+      level: "Beginner",
+      nutrition: "Nutrition and Diet",
+      title: "Holistic Health: Integrating Mind, Body, and Spirit",
+      rating: 389,
+      price: "Enrolled",
+      trainer: "Luna Karim",
+      trainerPic: "/pictures/profile3.png",
+      image: "/pictures/card3.png",
+    },
+    {
+      level: "Beginner",
+      nutrition: "Nutrition and Diet",
+      title: "Introduction to healthy Diet and Nutrition",
+      rating: 566,
+      price: "$40",
+      trainer: "Kilian Murphe",
+      trainerPic: "/pictures/profile4.png",
+      image: "/pictures/card4.png",
+    },
+  ];
 
   return (
     <section className="courses-container">
@@ -82,10 +99,9 @@ const Courses = () => {
 
         <section className="cards-container">
           <section className="cards" style={{ left: `${cardState}px` }}>
-            {card}
-            {card}
-            {card}
-            {card}
+            {cards.map((item) => {
+              return <Card key={item.trainerPic} cardData={item} />;
+            })}
           </section>
         </section>
       </section>

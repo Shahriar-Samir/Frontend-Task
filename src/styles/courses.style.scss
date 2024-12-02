@@ -238,3 +238,51 @@
   font-size: 24px;
   font-weight: 500;
 }
+
+@media (min-width: 0px) {
+  .courses-section .courses-titles h1 {
+    font-size: 30px;
+  }
+
+  .courses-section .courses-titles p {
+    color: rgba(0, 0, 0, 0.7);
+    font-family: Onest;
+    font-size: 16px;
+    font-weight: 400;
+    max-width: 669px;
+    width: 100%;
+    margin-top: 1em;
+  }
+
+  .courses-section .courses-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 24px;
+    flex-direction: column;
+    gap: 2em;
+  }
+
+  .card {
+    width: 300px;
+  }
+}
+@media (min-width: 768px) {
+  .courses-section .courses-titles h1 {
+    font-size: 30px;
+  }
+
+  .courses-section .courses-titles p {
+    font-size: 16px;
+  }
+
+  .courses-section .courses-heading {
+    flex-direction: row;
+  }
+
+  .card {
+    width: 400px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 13px;
+  }
+}

@@ -13,14 +13,14 @@ const Banner = () => {
               <img src="/icons/star.png" className="star" />
               <img src="/icons/half-star.png" className="star" />
             </div>
-            <p>4.9 (566)</p>
+            <p className="rating">4.9 (566)</p>
           </div>
           <h1>#1 Platform Powering Health and Wellness</h1>
           <h2>
             We&apos;re restoring home as the primary place of personal
             well-being
           </h2>
-          <p>
+          <p className="details">
             Health is not just about what you&apos;re eating. It&apos;s also
             about what you&apos;re thinking and saying
           </p>
