@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import React, { useEffect, useState } from "react";
 
 const Review = () => {
@@ -39,8 +40,13 @@ const Review = () => {
         <section className="reviews" style={{ left: `${slide}px` }}>
           <article className="review">
             <div className="review-photos">
-              <img src="/pictures/profile1.png" />
-              <img src="/pictures/quote.png" />
+              <Image
+                alt=""
+                width={56}
+                height={56}
+                src="/pictures/profile1.png"
+              />
+              <Image alt="" width={56} height={56} src="/pictures/quote.png" />
             </div>
             <h2>Kilian Murphe</h2>
             <p>
@@ -50,8 +56,13 @@ const Review = () => {
           </article>
           <article className="review">
             <div className="review-photos">
-              <img src="/pictures/profile1.png" />
-              <img src="/pictures/quote.png" />
+              <Image
+                alt=""
+                width={56}
+                height={56}
+                src="/pictures/profile1.png"
+              />
+              <Image alt="" width={56} height={56} src="/pictures/quote.png" />
             </div>
             <h2>Kilian Murphe</h2>
             <p>
@@ -63,8 +74,13 @@ const Review = () => {
           </article>
           <article className="review">
             <div className="review-photos">
-              <img src="/pictures/profile1.png" />
-              <img src="/pictures/quote.png" />
+              <Image
+                alt=""
+                width={56}
+                height={56}
+                src="/pictures/profile1.png"
+              />
+              <Image alt="" width={56} height={56} src="/pictures/quote.png" />
             </div>
             <h2>Kilian Murphe</h2>
             <p>
@@ -75,8 +91,13 @@ const Review = () => {
           </article>
           <article className="review">
             <div className="review-photos">
-              <img src="/pictures/profile1.png" />
-              <img src="/pictures/quote.png" />
+              <Image
+                alt=""
+                width={56}
+                height={56}
+                src="/pictures/profile1.png"
+              />
+              <Image alt="" width={56} height={56} src="/pictures/quote.png" />
             </div>
             <h2>Kilian Murphe</h2>
             <p>
@@ -86,8 +107,13 @@ const Review = () => {
           </article>
           <article className="review">
             <div className="review-photos">
-              <img src="/pictures/profile1.png" />
-              <img src="/pictures/quote.png" />
+              <Image
+                alt=""
+                width={56}
+                height={56}
+                src="/pictures/profile1.png"
+              />
+              <Image alt="" width={56} height={56} src="/pictures/quote.png" />
             </div>
             <h2>Kilian Murphe</h2>
             <p>
@@ -97,8 +123,13 @@ const Review = () => {
           </article>
           <article className="review">
             <div className="review-photos">
-              <img src="/pictures/profile1.png" />
-              <img src="/pictures/quote.png" />
+              <Image
+                alt=""
+                width={56}
+                height={56}
+                src="/pictures/profile1.png"
+              />
+              <Image alt="" width={56} height={56} src="/pictures/quote.png" />
             </div>
             <h2>Kilian Murphe</h2>
             <p>
@@ -109,8 +140,13 @@ const Review = () => {
           </article>
           <article className="review">
             <div className="review-photos">
-              <img src="/pictures/profile1.png" />
-              <img src="/pictures/quote.png" />
+              <Image
+                alt=""
+                width={56}
+                height={56}
+                src="/pictures/profile1.png"
+              />
+              <Image alt="" width={56} height={56} src="/pictures/quote.png" />
             </div>
             <h2>Kilian Murphe</h2>
             <p>

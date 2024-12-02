@@ -1,12 +1,13 @@
 import React from "react";
 import { TCard } from "../../types/card";
+import Image from "next/image";
 
 const Card = (props: { cardData: TCard }) => {
   const { level, nutrition, rating, price, trainer, trainerPic, title, image } =
     props.cardData;
   return (
     <article className="card">
-      <img src={image} />
+      <Image alt="" height={2000} width={2000} src={image} />
       <section className="card-details">
         <div className="course-status">
           <p className="beginner">{level}</p>
@@ -15,27 +16,57 @@ const Card = (props: { cardData: TCard }) => {
         <h1>{title}</h1>
         <div className="review-status">
           <div className="stars">
-            <img src="/icons/star.png" className="star" />
-            <img src="/icons/star.png" className="star" />
-            <img src="/icons/star.png" className="star" />
-            <img src="/icons/star.png" className="star" />
-            <img src="/icons/half-star.png" className="star" />
+            <Image
+              alt=""
+              height={50}
+              width={50}
+              src="/icons/star.png"
+              className="star"
+            />
+            <Image
+              alt=""
+              height={50}
+              width={50}
+              src="/icons/star.png"
+              className="star"
+            />
+            <Image
+              alt=""
+              height={50}
+              width={50}
+              src="/icons/star.png"
+              className="star"
+            />
+            <Image
+              alt=""
+              height={50}
+              width={50}
+              src="/icons/star.png"
+              className="star"
+            />
+            <Image
+              alt=""
+              height={500}
+              width={500}
+              src="/icons/half-star.png"
+              className="star"
+            />
           </div>
           <p>4.9 ({rating})</p>
         </div>
         <div className="deadline-lesson">
           <div className="deadline">
-            <img src="/icons/timer.png" />
+            <Image alt="" height={50} width={50} src="/icons/timer.png" />
             <p>6h 34m</p>
           </div>
           <div className="lessons">
-            <img src="/icons/book.png" />
+            <Image alt="" height={50} width={50} src="/icons/book.png" />
             <p>3 Lessons</p>
           </div>
         </div>
         <div className="trainer-price">
           <div className="trainer">
-            <img src={trainerPic} />
+            <Image alt="" height={500} width={500} src={trainerPic} />
             <h1>{trainer}</h1>
           </div>
           <h2>{price}</h2>

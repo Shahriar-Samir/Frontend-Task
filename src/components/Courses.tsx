@@ -3,6 +3,7 @@
 import React, { useEffect, useState } from "react";
 import Card from "./Card";
 import { TCard } from "../../types/card";
+import Image from "next/image";
 
 const Courses = () => {
   const [cardState, setCardState] = useState<number>(0);
@@ -89,10 +90,20 @@ const Courses = () => {
           </div>
           <section className="courses-btns">
             <div className="courses-btn1" onClick={leftClick}>
-              <img src="/icons/left-button.png" />
+              <Image
+                alt=""
+                height={500}
+                width={500}
+                src="/icons/left-button.png"
+              />
             </div>
             <div className="courses-btn2" onClick={rightClick}>
-              <img src="/icons/right-button.png" />
+              <Image
+                alt=""
+                height={500}
+                width={500}
+                src="/icons/right-button.png"
+              />
             </div>
           </section>
         </section>

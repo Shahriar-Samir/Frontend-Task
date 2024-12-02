@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const Navbar = () => {
@@ -22,7 +23,7 @@ const Navbar = () => {
         </li>
       </ul>
       <section>
-        <img src="/icons/bag.svg" />
+        <Image alt="" height={50} width={50} src="/icons/bag.svg" />
         <button>Login</button>
       </section>
     </nav>

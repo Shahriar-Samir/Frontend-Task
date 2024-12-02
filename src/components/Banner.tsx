@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const Banner = () => {
@@ -7,11 +8,41 @@ const Banner = () => {
         <div className="banner-left">
           <div className="review-status">
             <div className="stars">
-              <img src="/icons/star.png" className="star" />
-              <img src="/icons/star.png" className="star" />
-              <img src="/icons/star.png" className="star" />
-              <img src="/icons/star.png" className="star" />
-              <img src="/icons/half-star.png" className="star" />
+              <Image
+                alt=""
+                width={50}
+                height={50}
+                src="/icons/star.png"
+                className="star"
+              />
+              <Image
+                alt=""
+                width={50}
+                height={50}
+                src="/icons/star.png"
+                className="star"
+              />
+              <Image
+                alt=""
+                width={50}
+                height={50}
+                src="/icons/star.png"
+                className="star"
+              />
+              <Image
+                alt=""
+                width={50}
+                height={50}
+                src="/icons/star.png"
+                className="star"
+              />
+              <Image
+                alt=""
+                width={50}
+                height={50}
+                src="/icons/half-star.png"
+                className="star"
+              />
             </div>
             <p className="rating">4.9 (566)</p>
           </div>
@@ -30,8 +61,20 @@ const Banner = () => {
           </div>
         </div>
         <div className="banner-right">
-          <img src="/pictures/Leaf.png" className="leaf" />
-          <img src="/pictures/banner.png" className="banner-photo" />
+          <Image
+            alt=""
+            width={500}
+            height={500}
+            src="/pictures/Leaf.png"
+            className="leaf"
+          />
+          <Image
+            alt=""
+            width={2000}
+            height={2000}
+            src="/pictures/banner.png"
+            className="banner-photo"
+          />
           <div className="banner-right-info">
             <div className="info1">
               <h1>12,000+</h1>
