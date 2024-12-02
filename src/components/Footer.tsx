@@ -45,6 +45,12 @@ const Footer = () => {
         </section>
         <section className="social-links">
           <h1>Join our official channels</h1>
+          <div className="icons">
+            <img className="icon" src="/icons/insta.png" />
+            <img className="icon" src="/icons/x.png" />
+            <img className="icon" src="/icons/facebook.png" />
+            <img className="icon" src="/icons/discord.png" />
+          </div>
         </section>
         <p className="copyright">© 2024 EduPath. All rights reserved</p>
       </section>
