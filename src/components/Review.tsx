@@ -18,8 +18,8 @@ const Review = () => {
     }
   }, []);
 
-  const changeSlide = (round) => {
-    setRounds((preRounds: numbers[]) => {
+  const changeSlide = (round: number) => {
+    setRounds((preRounds: number[]) => {
       return preRounds.map((item, index) => {
         if (index === round) {
           return 1;
