@@ -1,0 +1,221 @@
+.courses-section {
+  width: 80%;
+  margin: auto;
+  margin-top: 120px;
+}
+.courses-section .courses-titles h1 {
+  font-family: Onest;
+  font-size: 40px;
+  font-weight: 700;
+}
+.courses-section .courses-titles p {
+  color: rgba(0, 0, 0, 0.7);
+  font-family: Onest;
+  font-size: 16px;
+  font-weight: 400;
+  max-width: 669px;
+  width: 100%;
+}
+.courses-section .courses-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 24px;
+}
+.courses-section .courses-btns {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 1em;
+}
+.courses-section .courses-btns .courses-btn1 {
+  width: 56px;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 40px;
+}
+.courses-section .courses-btns .courses-btn1 img {
+  width: 32px;
+  height: 32px;
+}
+.courses-section .courses-btns .courses-btn2 {
+  width: 56px;
+  height: 56px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  border-radius: 40px;
+}
+
+.courses-section .courses-btns .courses-btn2 img {
+  width: 32px;
+  height: 32px;
+}
+
+.courses-section .courses-titles p {
+  color: rgba(0, 0, 0, 0.7);
+  font-family: Onest;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.cards {
+  margin-top: 60px;
+}
+
+.card {
+  width: 400px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 13px;
+}
+.card img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 13px 13px 0px 0px;
+}
+
+.card .course-status {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 1em;
+  margin-top: 16.5px;
+}
+
+.card .beginner {
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 151, 0, 0.5);
+  border-radius: 5px;
+  background: rgba(255, 151, 0, 0.1);
+  padding: 4px 8px 4px 8px;
+}
+.card .nutrition {
+  box-sizing: border-box;
+  border: 1px solid rgb(205, 229, 51);
+  border-radius: 5px;
+  background: rgba(205, 229, 51, 0.2);
+  padding: 4px 8px 4px 8px;
+}
+
+.card h1 {
+  color: rgb(0, 0, 0);
+  font-family: Onest;
+  font-size: 24px;
+  font-weight: 500;
+  margin-top: 16.5px;
+}
+
+.card .review-status {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 0.7em;
+  font-size: 24px;
+  margin-top: 16.5px;
+}
+.card .review-status p {
+  color: rgb(0, 0, 0);
+  font-family: Onest;
+  font-size: 13px;
+  font-weight: 600;
+}
+.card .star {
+  width: 20.99px;
+  height: 20.25px;
+}
+.card .card-details {
+  padding: 16.5px;
+}
+
+.card .stars {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 0.4em;
+}
+
+.deadline-lesson {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-top: 61.5px;
+}
+.deadline {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding-right: 16.5px;
+  gap: 0.6em;
+}
+
+.deadline img {
+  width: 18px;
+  height: 21px;
+}
+.deadline h1 {
+  color: rgb(0, 0, 0);
+  font-family: Onest;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.lessons {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding-left: 16.5px;
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
+  gap: 0.6em;
+}
+
+.lessons img {
+  width: 18px;
+  height: 21px;
+}
+.lessons h1 {
+  color: rgb(0, 0, 0);
+  font-family: Onest;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.trainer-price {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 16.5px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  margin-top: 16.5px;
+}
+.trainer-price .trainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5em;
+}
+.trainer-price .trainer img {
+  width: 40px;
+  height: 40px;
+}
+
+.trainer-price h1 {
+  color: rgb(0, 0, 0);
+  font-family: Onest;
+  font-size: 16px;
+  font-weight: 600;
+}
+.trainer-price h2 {
+  color: rgb(0, 0, 0);
+  font-family: Onest;
+  font-size: 24px;
+  font-weight: 500;
+}
