@@ -45,6 +45,7 @@
   box-sizing: border-box;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 40px;
+  cursor: pointer;
 }
 .courses-section .courses-btns .courses-btn1 img {
   width: 32px;
@@ -53,6 +54,7 @@
 .courses-section .courses-btns .courses-btn2 {
   width: 56px;
   height: 56px;
+  cursor: pointer;
   box-sizing: border-box;
   display: flex;
   justify-content: center;
