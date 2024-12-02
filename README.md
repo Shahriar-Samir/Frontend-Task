@@ -3,6 +3,7 @@
 - Static Site.
 - Courses section Dynamic Carousel.
 - Review section Dynamic Carousel.
+- Fully responsive.
 
 ### How to run this on your local machine
 
