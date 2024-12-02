@@ -1,3 +1,4 @@
+import About from "@/components/About";
 import Banner from "@/components/Banner";
 import Courses from "@/components/Courses";
 import Navbar from "@/components/Navbar";
@@ -12,6 +13,7 @@ const Home = () => {
       </header>
       <main>
         <Courses />
+        <About />
       </main>
     </main>
   );
