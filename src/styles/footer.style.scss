@@ -19,6 +19,11 @@
   margin-top: 40px;
 }
 
+.footer-link-containers {
+  display: flex;
+  justify-content: space-between;
+  gap: 2em;
+}
 .footer-link-container h1 {
   color: rgba(0, 0, 0, 0.5);
   font-family: Onest;
@@ -44,4 +49,16 @@
   padding-block: 25px;
   border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
   border-top: 1px dashed rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 0px) {
+  .footer-link-containers {
+    flex-direction: column;
+    gap: 2em;
+  }
+}
+@media (min-width: 768px) {
+  .footer-link-containers {
+    flex-direction: row;
+  }
 }

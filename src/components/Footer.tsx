@@ -16,6 +16,32 @@ const Footer = () => {
               <p>Social well-being</p>
             </div>
           </div>
+          <div className="footer-link-container">
+            <h1>About</h1>
+            <div className="links">
+              <p>About us</p>
+              <p>Our partners</p>
+              <p>Investors</p>
+              <p>Career</p>
+            </div>
+          </div>
+          <div className="footer-link-container">
+            <h1>Categories</h1>
+            <div className="links">
+              <p>FAQ</p>
+              <p>Refund policies</p>
+              <p>Terms and conditions</p>
+              <p>Cookie</p>
+              <p>Latest posts</p>
+            </div>
+          </div>
+          <div className="footer-link-container">
+            <h1>Support</h1>
+            <div className="links">
+              <p>Get in touch</p>
+              <p>Visit our forum</p>
+            </div>
+          </div>
         </section>
         <section className="social-links">
           <h1>Join our official channels</h1>
